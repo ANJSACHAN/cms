@@ -20,8 +20,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 bg-gray-800 h-screen overflow-y-auto p-4 hide-scrollbar">
-      <ul className="space-y-2">
+    <div className="w-32 bg-gray-800 h-screen overflow-y-auto p-4 hide-scrollbar absolute">
+      <ul className="space-y-4">
         {/* Post Menu */}
         <li>
           <Link to="/create"
