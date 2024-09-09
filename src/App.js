@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from './Components/Sidebar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from './Components/Landing';
-import Create from './Components/Create';
+import Create from './Components/Create/Create';
 import Media from './Components/Media';
 import Analytics from './Components/Analytics';
 import Comment from './Components/Comment';
