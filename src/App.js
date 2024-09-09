@@ -9,6 +9,8 @@ import Comment from './Components/Comment';
 import Plugins from './Components/Plugins';
 import User from './Components/User';
 import Setting from './Components/Setting';
+
+import AddUser from './Components/AddUser';
 import AddPost from './Components/AddPost';
 
 function App() {
@@ -16,17 +18,19 @@ function App() {
     <>
      <BrowserRouter>
     <Sidebar />
+    <AddUser/>
      <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/create" element={<Create />} />
           <Route path="/media" element={<Media />} />
           <Route path="/analytics" element={<Analytics />} />
-              <Route path="/comments" element={<Comment />} />
-              <Route path="/plugins" element={<Plugins />} />
-              <Route path="/user" element={<User />} />
-              <Route path="/setting" element={<Setting />} />
+          <Route path="/comments" element={<Comment />} />
+          <Route path="/plugins" element={<Plugins />} />
+          <Route path="/user" element={<User />} />
+          <Route path="/setting" element={<Setting />} />
+          <Route path="/user/adduser" element={<AddUser />}/>
               <Route path="/create/addpost" element={<AddPost />} />
-            {/* <Route path="*" element={<Errorpage />} /> */}
+        {/* <Route path="*" element={<Errorpage />} /> */}
         </Routes>
      </BrowserRouter>
     
